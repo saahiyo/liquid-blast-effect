@@ -4,7 +4,7 @@
 This project demonstrates a "liquid blast" effect where particles explode outward from a circle when clicked, with a fluid, gooey animation style.
 
 ## Demo
-Check out the live demo [here](https://your-demo-link.com).
+Check out the live demo [here](https://saahiyo.github.io/liquid-blast-effect/).
 
 ## Table of Contents
 - [Introduction](#introduction)
