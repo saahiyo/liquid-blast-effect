@@ -1,0 +1,57 @@
+/* Global reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full viewport dimensions */
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dadada;
+  position: relative;
+  overflow: hidden;
+  filter: url(#gooey); /* Apply gooey filter */
+}
+
+/* Central circle styles */
+.circle {
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(90deg, #FB5931, #FF4EFF);
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Particle styles */
+.particles {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #FB5931, #FF4EFF);
+  animation: animate 2s ease forwards;
+  z-index: -1;
+}
+
+/* Hide SVG */
+svg {
+  width: 0;
+  height: 0;
+}
+
+/* Animation for particles */
+@keyframes animate {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(var(--x), var(--y));
+  }
+}
